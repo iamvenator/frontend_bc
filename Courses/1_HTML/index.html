@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First web page</title>
+</head>
+<body>
+    <h1>Welcome to my web page! h1</h1>
+
+    <!-- h etiketleri h1'den h6'da kadar gider.
+    h1 en büyük olmak üzere -->
+
+    <h2>Welcome to my web page! h2</h2>
+    <h3>Welcome to my web page! h3</h3>
+    <hr>
+    <p> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo sit voluptates doloribus maxime ullam, 
+        earum quos illum odit dolore a aliquid ad distinctio 
+        nostrum est reprehenderit accusantium quidem! Aut, 
+        laboriosam. 
+    </p>
+        <!-- block element (browser inspect)  -->
+
+
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo sit voluptates doloribus maxime ullam, 
+        earum quos illum odit dolore a aliquid ad distinctio 
+        nostrum est reprehenderit accusantium quidem! Aut, 
+        laboriosam. 
+    </span>
+        <!-- inline element (browser inspect)  -->
+    
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolore.
+    </div>
+        <!-- block element like <p> (browser inspect) 
+            semantic elements? -->
+
+    <a href="about.html">About Page Redirection</a><br>
+    <a href="about.html" target="_blank">About Page Redirection on another Tab</a>
+    <br>
+
+    <!-- Mailto with a href -->
+    <a href="mailto:test@testmail.com">Contact via email</a>
+    <a href="phoneto:5555555555">Contact via phone</a>
+
+    <!-- Ordered list creation -->
+    <ol title="Ordered list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <!-- Unordered list creation -->
+    <ul>
+        <li>Not ordered item 1</li>
+        <li>Not ordered item 2</li>
+    </ul>
+
+    <!-- Image adding and description, 
+    alt is important for SEO as well.
+    Also important for user-friendliness. -->
+
+    <img 
+        src="image1.jpg" 
+        alt="Bird image" 
+        width="200" 
+        height="200">
+
+    <!-- Today, image width and height is controlled
+    using CSS. src and alt are enough to provide
+    an image. -->
+
+    <!-- Nested tags -->
+    <br>
+    <a href="about.html" target="_blank">
+        <img src="image2.png" alt="About us" width="200" height="100">
+    </a>
+
+    <!-- HTML tables
+    Each table has a thead and tbody parts. -->
+    <br>
+    <table 
+        border="1" 
+        title="Table title" 
+        cellpadding="10"
+        cellspacing="1"
+        width="50%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joe</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- HTML forms -->
+    <br><br>
+    <form>
+        <div>
+            <!-- if input for "for" and input for "id"
+            are the same, it means we are referencing 
+            the input part from the form input name -->
+            <label for="name">Name: </label>
+            <input type="text" id="name" />
+        </div>
+        <div>
+            <label for="surname">Surname: </label>
+            <input type="text" id="surname" />
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" />
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" />
+        </div>
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" id="date" />
+        </div>
+        <div>
+            <!-- If their name's wouldn't be the same
+            both of them could be selected at
+            the same time. -->
+            <label>Sex: </label>
+            <label for="man">Man</label>
+            <input type="radio" name="gender" id="man" />
+            <label for="woman">Woman</label>
+            <input type="radio" name="gender" id="woman">
+        </div>
+        <div>
+            <label>Programming Languages</label>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="python "/>
+        </div>
+        <div>
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="javascript" name="javascript "/>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
