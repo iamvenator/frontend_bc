@@ -1,2 +1,2 @@
 # frontend_bc
-front-end bootcamp
+Front-end bootcamp related files.
