@@ -1,0 +1,44 @@
+
+.link {
+    color: rgb(197, 126, 32);
+    
+}
+.link:active { /* when clicked */
+    color: green;
+}
+.link:visited {
+    color: red;
+}
+.link:hower {
+    color:purple;
+}
+
+/* These are pseudo classes. */
+
+.list_item {
+    color: rgb(157, 49, 119);
+    list-style-type: none;
+    font-size: 15px
+}
+
+.list_item:first-child {
+    color: blue;
+}
+
+.list_item:nth-child(odd){
+    color: aquamarine;
+}
+
+.list_item::first-letter{
+    color: blue;
+    font-size: 50px;
+}
+
+.paragraf {
+    color:blueviolet;
+}
+
+.paragraf::first-letter{
+    font-size: 50px;
+}
+

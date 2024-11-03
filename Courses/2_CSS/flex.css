@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    background-color: darkgray;
+    display: flex; /* by default, puts all elements in a row */
+    /* flex-direction: col; can make it vertical */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* flex-wrap boxlari ekran kuculdukce sira sira asagiya atar. */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.box1 {
+    padding-top: 25px;
+    order:1
+}
+
+.box2 {
+    padding-left: 25px;
+    order:2
+}
+
+.box3 {
+    order:3;
+    padding: 45px;
+    height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box1 {
+        order: 3
+    }
+
+    .box2 {
+        order: 2
+    }
+    
+    .box3 {
+        order: 1
+    }
+}
