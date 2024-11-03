@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    height: 100vh; /*
+    As the screen height*/
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box { 
+    width: 100px;
+    height: 100px;
+    background-color: rgb(204, 96, 96);
+    /*
+    We could do it by one command:
+
+    transition-property: background-color, width, height;
+    
+    Which property of the box would be affected
+    by the animation.
+    
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    */
+    /* this one command!
+    transition: all .5s ease-in-out;
+    */
+    /*
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    */
+    animation: boxy 2s ease-in-out infinite;
+}
+
+@keyframes boxy {
+    0% {
+        transform: translateX(0px);
+        background-color: rgb(204, 96, 96);
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: rgb(22, 132, 23);
+    }
+    100% {
+        transform: translateX(0px);
+        background-color: rgb(204, 96, 96);
+    }
+
+}
+
+.box:hover {
+    background-color: rgb(69, 190, 50);
+    width: 150px;
+    height: 150px;
+}

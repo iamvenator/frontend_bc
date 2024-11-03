@@ -1,0 +1,27 @@
+.item {
+    background-color: orange;
+    padding: 20px;
+}
+
+.container {
+    height: 600px;
+    padding: 20px;
+    background-color: gray;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /*
+    grid-template-columns: 150px auto auto auto auto 150px;*/
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr; */
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /*
+    This is important for responsiveness. It'll drop
+    the boxes to the next line if the screen gets
+    narrowed.
+    */
+
+
+}

@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    height: 600px;
+    background-color: gray;
+    gap: 3px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar section section"
+        "sidebar . ."
+        "box-1 box-1 box-1"
+        /* Dots would be replaced by the elements never referenced
+        in the grid template. */
+
+
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(47, 94, 155);
+    padding: 20px;
+}
+
+.section {
+    grid-area: section;
+    background-color: greenyellow;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: red;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: purple;
+    padding: 20px;
+}
+
+.box-1 {
+    grid-area: box-1;
+    background-color: blue;
+    padding: 20px;
+}
+
+.menu-item {
+    list-style-type: none;
+}
